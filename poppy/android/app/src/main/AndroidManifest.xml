@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bemvivertecnologia.poppy"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bemvivertecnologia.poppy">
    <application
         android:label="poppy"
         android:icon="@mipmap/ic_launcher"
-        tools:replace="android:label">
+       tools:replace="android:label">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
