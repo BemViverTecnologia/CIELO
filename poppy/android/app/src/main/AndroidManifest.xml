@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.bemvivertecnologia.poppy">
+    package="com.example.poppy">
    <application
         android:label="poppy"
         android:icon="@mipmap/ic_launcher"
