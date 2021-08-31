@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:poppy/core/erros/failures.dart';
+import 'package:poppy/core/errors/failures.dart';
 
 abstract class Usecase<Output, Input> {
   Future<Either<Failure, Output>> call(Input params);

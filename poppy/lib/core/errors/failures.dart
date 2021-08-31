@@ -16,3 +16,18 @@ class NoProductsFailure extends Failure {
   @override
   List<Object?> get props => [];
 }
+
+class GetDeviceIdFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}
+
+class EmptyDeviceIdFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}
+
+class DeviceCallFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}

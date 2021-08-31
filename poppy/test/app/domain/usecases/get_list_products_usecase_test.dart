@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:poppy/app/domain/models/product.dart';
+import 'package:poppy/app/domain/models/product_model.dart';
 import 'package:poppy/app/domain/repositories/products_list_repository_interface.dart';
 import 'package:poppy/app/domain/usecases/get_list_products_usecase.dart';
-import 'package:poppy/core/erros/failures.dart';
+import 'package:poppy/core/errors/failures.dart';
 import 'package:poppy/core/usecases/usecase.dart';
 
 class ProductsRepositoryMock extends Mock implements IProductsListRepository {}
@@ -59,11 +59,8 @@ main() {
 
     final result = await usecase('');
     expect(result, Left(NoDeviceIdFailure()));
-    var captured =
-        verify(() => repository.getProductsByDevice(captureAny())).captured;
-    expect(captured, isA<List<dynamic>>());
-    expect(captured.length, 1);
-    expect(captured.last, equals(''));
+
+    verifyNever(() => repository.getProductsByDevice(captureAny()));
   });
   test('must get a list of without any products', () async {
     when(() => repository.getProductsByDevice(tDeviceId)).thenAnswer(

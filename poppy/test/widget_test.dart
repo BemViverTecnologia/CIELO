@@ -6,13 +6,19 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_modular_test/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:poppy/app/presenter/pages/home_page.dart';
+import 'package:poppy/app_module.dart';
 
 import 'package:poppy/main.dart';
 
 void main() {
+  setUp(() {
+    initModule(AppModule());
+  });
   testWidgets('open page test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(HomePage());
   });
 }
