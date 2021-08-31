@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular_test/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:poppy/app/presenter/pages/home_page.dart';
+import 'package:poppy/app/modules/home/presenter/pages/home_page.dart';
 import 'package:poppy/app_module.dart';
 
 import 'package:poppy/main.dart';

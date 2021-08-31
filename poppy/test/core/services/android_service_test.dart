@@ -1,7 +1,7 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:poppy/app/data/datasources/endpoints/channel_methods.dart';
+import 'package:poppy/app/modules/home/data/datasources/endpoints/channel_methods.dart';
 import 'package:poppy/core/services/android_service.dart';
 import 'package:poppy/core/services/android_service_interface.dart';
 
